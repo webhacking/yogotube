@@ -10,7 +10,7 @@ const Input = styled.input``;
 
 const SearchPresenter = ({ onSubmit, onChange, term, videos }) => (
   <Container>
-    <Form onSubmit>
+    <Form onSubmit={onSubmit}>
       <Input
         value={term}
         onChange={onChange}

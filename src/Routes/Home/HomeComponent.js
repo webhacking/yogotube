@@ -11,7 +11,8 @@ export default class extends Component {
 
     this.state = {
       videos: [],
-      selectedVideo: null
+      selectedVideo: null,
+      term: ""
     };
     this.videoSearch("");
   }
@@ -34,6 +35,5 @@ export default class extends Component {
         />
       </>
     );
-    // <HomePres>{ adas ? <Search />: }  <HomePres /> 이런식으로 구현 혹은 map.
   }
 }

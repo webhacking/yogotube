@@ -34,8 +34,8 @@ export default class extends Component {
     const { videos, selectedVideo } = this.props;
     return (
       <SearchPresenter
-        onSubmit={this.onSubmit}
-        onChange={this.onChange}
+        onSubmit={this.onSubmit.bind(this)}
+        onChange={this.onChange.bind(this)}
         term={term}
         videos={videos}
         selectedVideo={selectedVideo}
