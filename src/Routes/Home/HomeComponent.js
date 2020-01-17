@@ -29,7 +29,7 @@ export default class extends Component {
       <>
         <HomePresenter />
         <Search
-          onSearchTermChange={this.videoSearch}
+          onSearchTermChange={this.videoSearch.bind(this)}
           videos={videos}
           selectedVideo={selectedVideo}
         />
